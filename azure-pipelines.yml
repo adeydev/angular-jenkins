@@ -15,6 +15,6 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm install
-    npm test -- --watch=false
+    npm test -- --browsers ChromeHeadless --watch=false
     ng build --prod
   displayName: 'npm install and build'
