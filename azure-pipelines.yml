@@ -15,6 +15,8 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm install
-    npm test
-    ng build --prod
-  displayName: 'npm install and build'
+  displayName: 'npm install'
+  
+  - script: |
+    npm test -- --watch=false
+  displayName: 'npm test'
