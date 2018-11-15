@@ -20,8 +20,7 @@ steps:
   displayName: 'npm install and build'
   
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish artifacts'
-    inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)/dist/servicetest'
-      ArtifactName: app
-      publishLocation: Container  
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/dist/servicetest'
+    ArtifactName: app
+    publishLocation: Container  
